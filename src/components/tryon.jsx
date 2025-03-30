@@ -40,18 +40,15 @@ const TryOnPage = () => {
       {/* Left Section: User Inputs */}
       <div className="input-section">
         <h2>Customize Your Try-On</h2>
-        <label>Height (cm):</label>
-        <input type="number" name="height" value={userDetails.height} onChange={handleChange} />
-
-        <label>Weight (kg):</label>
-        <input type="number" name="weight" value={userDetails.weight} onChange={handleChange} />
-
-        <label>Body Type:</label>
+        <label>Size</label>
         <select name="bodyType" value={userDetails.bodyType} onChange={handleChange}>
           <option value="">Select</option>
-          <option value="slim">Slim</option>
-          <option value="average">Average</option>
-          <option value="curvy">Curvy</option>
+          <option value="slim">XS</option>
+          <option value="slim">S</option>
+          <option value="slim">M</option>
+          <option value="slim">L</option>
+          <option value="slim">XL</option>
+          <option value="slim">XXL</option>
         </select>
 
         <label>Upload Your Image:</label>
